@@ -1,0 +1,506 @@
+/*首页的样式表*/
+/*设置导航条的容器*/
+.bar-warpper{
+    /*宽度就是屏幕的宽度*/
+    /*width: 100%;*/
+    /*高度*/
+    height: 40px;
+    /*设置背景颜色*/
+    background-color: #333333;
+}
+
+/*设置顶部导航条*/
+.bar-warpper .top-bar{
+    height: 100%;
+    /*设置超链接居中显示*/
+    line-height: 40px;
+
+}
+
+/*设置左侧导航条*/
+.link-bar{
+    /*向左浮动*/
+    float: left;
+
+}
+
+/*设置右侧工具*/
+.info-bar, .cart-bar{
+    /*向右浮动*/
+    float: right;
+    /*设置超链接居中显示*/
+    line-height: 40px;
+}
+
+/*下载app的链接*/
+.link-bar .download-app{
+    position: relative;
+}
+
+/*鼠标移入显示二维码*/
+.link-bar .download-app:hover .code{
+    display: block;
+}
+
+/*设置左侧的二维码*/
+.link-bar .code{
+    display: none;
+    width: 124px;
+    height: 150px;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    left: -40px;
+    box-shadow: 0 0 4px rgba(0,0,0,.3);
+    line-height: 1;
+    z-index: 999;
+}
+
+/*设置二维码上方的小三角*/
+.link-bar .arrow{
+    /*开启绝对定位*/
+    position: absolute;
+    width: 0;
+    height: 0;
+/*    设置边框*/
+    border: 10px solid #fff;
+/*    去除上边框*/
+    border-top: none;
+/*    设置边框的颜色*/
+    border-color: transparent transparent #fff;
+    /*设置位置*/
+    top: -10px;
+    /*居中*/
+    left: 52px;
+}
+
+/*二维码图片*/
+.code img{
+    margin: 20px;
+}
+
+.link-bar .code span{
+    font-size: 14px;
+    color: #333;
+
+}
+
+/*设置超链接的样式*/
+.bar-warpper a{
+    /*转换为行内块*/
+    /*display: inline-block;*/
+    float: left;
+    /*设置高度*/
+    height: 40px;
+    /*设置字体大小*/
+    font-size: 12px;
+    color: #b0b0b0;
+    /*去除下划线*/
+    text-decoration: none;
+    vertical-align: top;
+}
+
+/*鼠标移入的样式*/
+.bar-warpper a:hover{
+    color: #fff;
+}
+
+/*小竖线*/
+.bar-warpper .line{
+    float: left;
+    font-size: 12px;
+    color: #424242;
+    margin: 0 4px;
+    vertical-align: top;
+
+}
+
+.cart-bar{
+    /*开启相对定位*/
+    position: relative;
+}
+
+/*设置购物车鼠标移入效果*/
+.cart-bar:hover a{
+    background-color: #fff;
+    color: #ff6700;
+}
+
+/*设置购物车的样式*/
+.cart-bar a{
+    float: none;
+    display: block;
+    width: 120px;
+    text-align: center;
+    background-color: #424242;
+    margin-left: 15px;
+    position: relative;
+    z-index: 1000;
+}
+
+/*设置购物车的下拉框*/
+.cart-info{
+    position: absolute;
+    width: 316px;
+    height: 0px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    right: 0;
+    z-index: 999;
+    transition: all 0.3s;
+}
+
+/*鼠标移入，显示购物车详情*/
+.cart-bar:hover .cart-info{
+    height: 100px;
+}
+
+/*头部的wrapper*/
+.header-wrapper{
+    /*margin-top: 100px;*/
+    /*padding-top: 1px;*/
+    position: relative;
+
+}
+
+/*设置头部的样式*/
+.header{
+    height: 100px;
+    /*overflow: hidden;*/
+    /*position: relative;*/
+}
+
+
+/*设置logo的样式*/
+.header .logo{
+    float: left;
+    margin-top: 22px;
+}
+
+/*设置logo中链接的样式*/
+.logo a{
+    display: block;
+    width: 55px;
+    height: 55px;
+    text-indent: -9999px;
+    /*background-color: #ff6700;*/
+    /*设置背景图片*/
+    /*background-image: url("../img/mi-logo.png");*/
+    /*background-position: center center;*/
+
+    background: #ff6700 url("../img/mi-logo.png") center;
+}
+
+/*设置头部导航*/
+.header-nav{
+    width: 790px;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+    margin-left: 65px;
+}
+
+/*设置头部导航的li*/
+.header-nav > .nav > li{
+    float: left;
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+/*设置链接的样式*/
+.header-nav li a{
+    color: #333;
+    text-decoration: none;
+}
+
+/*超链接移入的样式*/
+.header-nav li a:hover{
+    color: #ff6700;
+}
+
+/*左侧导航条*/
+.left-nav{
+    /*开启绝对定位*/
+    position: absolute;
+    width: 234px;
+    height: 440px;
+    padding-top: 20px;
+    background-color: rgba(0,0,0,.6);
+    top: 100px;
+    /*left: 0;*/
+    margin-left: -120px;
+    /*right: 50%;*/
+    z-index: 999;
+}
+
+/*设置链接样式*/
+.left-nav li{
+    height: 42px;
+    line-height: 42px;
+}
+
+/*设置超链接的样式*/
+.left-nav li a{
+    display: block;
+    height: 42px;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+.left-nav li a::after{
+    font-size: 20px;
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    float: right;
+    margin-right: 30px;
+}
+
+.left-nav li a:hover{
+    background-color: #ff6700;
+    color: #fff;
+}
+
+
+/*设置头部下拉层的样式*/
+.header-nav .hide-list{
+    /*开启绝对定位*/
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100px;
+    height: 0;
+    overflow: hidden;
+    background-color: #ff0;
+
+}
+
+/*鼠标移入以后显示隐藏层*/
+.header-nav .active-hide:hover ~ .hide-list,
+.header-nav .hide-list:hover{
+    height: 230px;
+    border-top: 1px solid #b0b0b0;
+    z-index: 99999;
+}
+
+/*设置搜索框*/
+.header .search{
+    float: right;
+    margin-top: 25px;
+}
+
+/*设置搜索表单项*/
+.header .search input[type='text']{
+    float: left;
+    width: 243px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+}
+
+.header .search button{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-left: none;
+    box-sizing: content-box;
+}
+
+/* 设置banner */
+.banner{
+    /* 设置高度 */
+    height: 460px;
+    background-color: aqua;
+    /* 开启相对定位 */
+    position: relative;
+}
+
+/* 为li开启定位 */
+.banner .img-list li{
+    position: absolute;
+}
+
+/* 设置图片的样式 */
+.banner img{
+    width: 100%;
+}
+
+/* 设置导航的小点 */
+.banner .point{
+    position: absolute;
+    bottom: 26px;
+    right: 34px;
+}
+
+.banner .point a{
+    /* 浮动 */
+    float: left;
+    width: 6px;
+    height: 6px;
+    /* 边框 */
+    border: 2px solid rgba(255, 255, 255, .3);
+    background-color: rgba(0, 0, 0, .4);
+    /* 圆角 */
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* 点击导航点的样式 */
+.banner .point a:hover,
+.banner .point .active{
+    border-color:rgba(0, 0, 0, .4) ;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+/* 设置翻页按钮 */
+.slide a{
+    position: absolute;
+    width: 41px;
+    height: 69px;
+    background-image: url("../img/icon-slides.png");
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+/* 分别设置两个按钮的位置 */
+.slide .prev{
+    left: 234px;
+    background-position: -84px 0;
+}
+
+.slide .next{
+    right: 0;
+    background-position: -125px 0;
+}
+
+.slide .prev:hover{
+    background-position: 0 0;
+}
+
+.slide .next:hover{
+    background-position: -42px 0;
+}
+
+/* 固定定位导航条 */
+.fixed-bar{
+    position: fixed;
+    height: 199px;
+    width: 25px;
+    border: 1px solid #f5f5f5;
+    right: 118px;
+    top: 300px;
+    z-index: 9999;
+}
+
+.fixed-bar li{
+    height: 39px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.fixed-bar li:nth-child(5){
+    bottom: none;
+}
+
+.fixed-bar li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 39px;
+    text-align: center;
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.fixed-bar li a:hover{
+    color: #ff6700;
+}
+
+/* 设置service div */
+.service{
+   margin-top: 14px;
+}
+
+/* 设置左侧的快捷图标 */
+.service .shortcut{
+    float: left;
+    width: 234px;
+    height: 170px;
+    background-color: #5f5750;
+}
+
+/* 快捷图片的li */
+.service .icon-list li{
+    float: left;
+    position: relative;
+}
+
+/* 超链接的样式 */
+.service .icon-list li a{
+    display: block; 
+    width: 78px;
+    height: 60px;
+    padding-top: 25px;
+    color: #dbd6c5;
+    text-decoration: none;
+    text-align: center;
+}
+
+.service .icon-list li i{
+    display: block;
+    font-size: 20px;
+}
+
+.service .icon-list li a:hover{
+    color: #fff;
+}
+
+/* 来设置边框 */
+.icon-list li:nth-child(1)::before,
+.icon-list li:nth-child(2)::before,
+.icon-list li:nth-child(3)::before{
+    /* 设置内容 */
+    content: '';
+    /* 开启绝对定位 */
+    position: absolute;
+    /* 设置边框的大小 */
+    width: 66px;
+    height: 1px;
+    background-color: #665e66;
+    bottom: 0;
+    left: 6px;
+}
+
+.icon-list li:nth-child(1)::after,
+.icon-list li:nth-child(2)::after,
+.icon-list li:nth-child(4)::after,
+.icon-list li:nth-child(5)::after{
+    /* 设置内容 */
+    content: '';
+    /* 开启绝对定位 */
+    position: absolute;
+    /* 设置边框的大小 */
+    width: 1px;
+    height: 70px;
+    background-color: #665e66;
+    top: 7.5px;
+    right: 0;
+}
+
+/* 广告图片的样式 */
+.service .ad{
+    float: left;
+    height: 170px;
+    width: 316px;
+    margin-left: 14px;
+}
+
+.service .ad img{
+    width: 100%;
+}
